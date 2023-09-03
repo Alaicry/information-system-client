@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./components/Header";
-import ThemeSwitcher from "./components/ThemeSwitcher";
+import Container from "./components/Container";
 
 const App = () => {
 	return (
-		<React.Fragment>
+		<Container>
 			<Header />
-		</React.Fragment>
+		</Container>
 	);
 };
 
