@@ -1,7 +1,15 @@
 import React from "react";
 
-const Container = ({ children }) => {
-	return <div className="container">{children}</div>;
+const Container = ({ children, classNameFromProps }) => {
+	return (
+		<div
+			className={
+				classNameFromProps ? `${classNameFromProps} container` : "container"
+			}
+		>
+			{children}
+		</div>
+	);
 };
 
 export default Container;

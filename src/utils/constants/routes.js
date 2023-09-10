@@ -7,6 +7,10 @@ export const navLinkRoutes = [
 		path: "/guide",
 		name: "Справочник",
 	},
+	{
+		path: "/auth",
+		name: "Авторизация",
+	},
 ];
 
 export const homeLinks = [

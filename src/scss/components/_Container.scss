@@ -2,4 +2,9 @@
 	max-width: 1310px;
 	padding: 0 15px;
 	margin: 0 auto;
+	&--bg {
+		padding: 8px 0px;
+		border-radius: 10px;
+		background: #fff;
+	}
 }

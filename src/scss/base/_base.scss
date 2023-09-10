@@ -1,0 +1,27 @@
+*,
+*:before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-color: $bgBody;
+	font-family: "Raleway", sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.list-reset {
+	list-style-type: none;
+}

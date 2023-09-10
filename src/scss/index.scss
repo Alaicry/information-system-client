@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&display=swap");
+
 @import "./base/normalize";
+@import "./abstracts/variables";
 @import "./base/base";
 
 //Import component styles
 @import "./components/Container";
+@import "./components/Header";
