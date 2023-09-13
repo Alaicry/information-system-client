@@ -4,7 +4,7 @@ const Container = ({ children, classNameFromProps }) => {
 	return (
 		<div
 			className={
-				classNameFromProps ? `${classNameFromProps} container` : "container"
+				classNameFromProps ? `container ${classNameFromProps}` : "container"
 			}
 		>
 			{children}

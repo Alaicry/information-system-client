@@ -15,6 +15,10 @@ export const navLinkRoutes = [
 
 export const homeLinks = [
 	{
+		path: "/glonass-confirmations",
+		name: "Журнал проверки контрагентов по ИНС ГЛОНАСС",
+	},
+	{
 		path: "/terminals-journal",
 		name: "Журнал навигационных терминалов",
 	},
@@ -36,5 +40,9 @@ export const guideLinks = [
 	{
 		path: "/guide/users",
 		name: "Список сотрудников",
+	},
+	{
+		path: "/guide/branch",
+		name: "Филиалы",
 	},
 ];
