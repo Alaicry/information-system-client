@@ -10,7 +10,9 @@
 	&__item {
 		padding: 10px 15px;
 		font-weight: 500;
-
+		&--cursor-pointer {
+			cursor: pointer;
+		}
 	}
 	&__link {
 		padding: 8px 15px;

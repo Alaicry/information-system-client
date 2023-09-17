@@ -7,10 +7,6 @@ export const navLinkRoutes = [
 		path: "/guide",
 		name: "Справочник",
 	},
-	{
-		path: "/auth",
-		name: "Авторизация",
-	},
 ];
 
 export const homeLinks = [
@@ -30,19 +26,19 @@ export const homeLinks = [
 
 export const guideLinks = [
 	{
-		path: "/guide/terminals",
-		name: "Справочник навигационных терминалов",
-	},
-	{
-		path: "/guide/sensors",
-		name: "Справочник датчиков уровня топлива",
+		path: "/guide/branch",
+		name: "Филиалы",
 	},
 	{
 		path: "/guide/users",
 		name: "Список сотрудников",
 	},
 	{
-		path: "/guide/branch",
-		name: "Филиалы",
+		path: "/guide/sensors",
+		name: "Справочник датчиков уровня топлива",
+	},
+	{
+		path: "/guide/terminals",
+		name: "Справочник навигационных терминалов",
 	},
 ];

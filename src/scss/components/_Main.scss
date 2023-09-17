@@ -1,0 +1,13 @@
+.main {
+	&__container {
+		padding: 15px;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 15px;
+	}
+}
+
+
