@@ -5,10 +5,9 @@ import Container from "./Container";
 import AuthModal from "./AuthModal";
 
 const Header = () => {
-	
-	const [modal, openModal] = React.useState(false);
+	const [modal, setModal] = React.useState(false);
 
-
+	const openModal = () => setModal(!modal);
 
 	return (
 		<header className="header">
@@ -35,7 +34,7 @@ const Header = () => {
 						</li>
 					</ul>
 				</nav>
-				{modal && <AuthModal />}
+				{modal && <AuthModal openModal={openModal} modal={modal} />}
 			</Container>
 		</header>
 	);
