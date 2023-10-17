@@ -2,9 +2,13 @@
 	max-width: 1054px;
 	padding: 0 15px;
 	margin: 0 auto;
+
 	&--bg {
 		padding: 8px 0px;
 		border-radius: 10px;
 		background: #fff;
+	}
+	&--shadow {
+		box-shadow: 6px 6px 10px 5px rgba(34, 60, 80, 0.2);
 	}
 }

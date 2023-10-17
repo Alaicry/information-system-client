@@ -1,0 +1,33 @@
+.auth-form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		gap: 40px;
+	}
+	&__field {
+		width: 280px;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+	&__label {
+		text-align: left;
+	}
+	&__input {
+		padding: 10px;
+		height: 30px;
+	}
+	&__button {
+		padding: 8px 16px;
+		border-radius: 8px;
+		background-color: #e5e5e5;
+	}
+}

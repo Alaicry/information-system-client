@@ -25,3 +25,9 @@ a {
 .list-reset {
 	list-style-type: none;
 }
+
+.button-reset {
+	border: none;
+	cursor: pointer;
+	background-color: inherit;
+}

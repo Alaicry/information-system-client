@@ -5,15 +5,16 @@ export const fetchAuth = createAsyncThunk(
 	"@@auth/fetchAuth",
 	async (params) => {
 		const { data } = await axios.post(
-			"http://localhost:4001/auth/signin",
+			"http://localhost:7000/auth/sign-in",
 			params
 		);
+
 		return data;
 	}
 );
 
 export const fetchAuthMe = createAsyncThunk("@@auth/fetchAuthMe", async () => {
-	const { data } = await axios.get("http://localhost:4001/auth/me", {
+	const { data } = await axios.get("http://localhost:7000/auth/check-auth", {
 		headers: {
 			Authorization: window.localStorage.getItem("token"),
 		},
@@ -47,6 +48,18 @@ const authSlice = createSlice({
 				state.status = "rejected";
 			})
 			.addCase(fetchAuth.fulfilled, (state, action) => {
+				state.userData = action.payload;
+				state.status = "received";
+			})
+			.addCase(fetchAuthMe.pending, (state) => {
+				state.userData = null;
+				state.status = "loading";
+			})
+			.addCase(fetchAuthMe.rejected, (state) => {
+				state.userData = null;
+				state.status = "rejected";
+			})
+			.addCase(fetchAuthMe.fulfilled, (state, action) => {
 				state.userData = action.payload;
 				state.status = "received";
 			});

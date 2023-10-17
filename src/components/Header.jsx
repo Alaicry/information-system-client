@@ -1,17 +1,15 @@
 import React from "react";
 import { navLinkRoutes } from "../utils/constants/routes";
-import { NavLink } from "react-router-dom";
+import { NavLink,  } from "react-router-dom";
 import Container from "./Container";
-import AuthModal from "./AuthModal";
+
 
 const Header = () => {
-	const [modal, setModal] = React.useState(false);
 
-	const openModal = () => setModal(!modal);
 
 	return (
 		<header className="header">
-			<Container classNameFromProps="container--bg">
+			<Container classNameFromProps="container--bg container--shadow">
 				<nav className="nav">
 					<ul className="menu list-reset">
 						{navLinkRoutes.map((route) => (
@@ -26,15 +24,8 @@ const Header = () => {
 								</NavLink>
 							</li>
 						))}
-						<li
-							className="menu__item menu__item--cursor-pointer"
-							onClick={() => openModal(!modal)}
-						>
-							Авторизация
-						</li>
 					</ul>
 				</nav>
-				{modal && <AuthModal openModal={openModal} modal={modal} />}
 			</Container>
 		</header>
 	);

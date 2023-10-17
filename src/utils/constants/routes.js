@@ -7,12 +7,16 @@ export const navLinkRoutes = [
 		path: "/guide",
 		name: "Справочник",
 	},
+	{
+		path: "/auth",
+		name: "Авторизация",
+	},
 ];
 
 export const homeLinks = [
 	{
 		path: "/glonass-confirmations",
-		name: "Журнал проверки контрагентов по ИНС ГЛОНАСС",
+		name: "Журнал проверки контрагентов по НИС ГЛОНАСС",
 	},
 	{
 		path: "/terminals-journal",
