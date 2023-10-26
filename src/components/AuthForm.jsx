@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchAuth, selectIsAuth } from "../redux/slices/authSlice";
+import { fetchAuth, selectIsAuth } from "../redux/slices/userSlice";
 import { Navigate } from "react-router-dom";
 
 const AuthForm = () => {

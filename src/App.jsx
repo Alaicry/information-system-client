@@ -3,7 +3,7 @@ import Main from "./components/Main";
 import Header from "./components/Header";
 import Container from "./components/Container";
 import { useDispatch } from "react-redux";
-import { fetchAuthMe } from "./redux/slices/authSlice";
+import { fetchAuthMe } from "./redux/slices/userSlice";
 
 const App = () => {
 	const dispatch = useDispatch();

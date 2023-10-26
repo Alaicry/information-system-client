@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Guide from "../pages/Guide";
 import Container from "./Container";
 import { Route, Routes } from "react-router-dom";
+import Branch from "./Branch";
 
 const Main = () => {
 	return (
@@ -13,6 +14,7 @@ const Main = () => {
 					<Route path="/" element={<Home />} />
 					<Route path="/guide" element={<Guide />} />
 					<Route path="/auth" element={<Auth />} />
+					<Route path="/guide/branch" element={<Branch />} />
 				</Routes>
 			</Container>
 		</main>

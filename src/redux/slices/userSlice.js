@@ -5,7 +5,7 @@ export const fetchAuth = createAsyncThunk(
 	"@@auth/fetchAuth",
 	async (params) => {
 		const { data } = await axios.post(
-			"http://localhost:7000/auth/sign-in",
+			"http://localhost:7000/user/sign-in",
 			params
 		);
 
@@ -14,7 +14,7 @@ export const fetchAuth = createAsyncThunk(
 );
 
 export const fetchAuthMe = createAsyncThunk("@@auth/fetchAuthMe", async () => {
-	const { data } = await axios.get("http://localhost:7000/auth/check-auth", {
+	const { data } = await axios.get("http://localhost:7000/user/check-auth", {
 		headers: {
 			Authorization: window.localStorage.getItem("token"),
 		},
@@ -27,7 +27,7 @@ const initialState = {
 	status: "loading",
 };
 
-const authSlice = createSlice({
+const userSlice = createSlice({
 	name: "@@auth",
 	initialState,
 	reducers: {
@@ -66,7 +66,7 @@ const authSlice = createSlice({
 	},
 });
 
-export const { signout } = authSlice.actions;
-export const selectIsAuth = (state) => Boolean(state.auth.userData);
-export const selectUserData = (state) => state.auth.userData;
-export default authSlice.reducer;
+export const { signout } = userSlice.actions;
+export const selectIsAuth = (state) => Boolean(state.user.userData);
+export const selectUserData = (state) => state.user.userData;
+export default userSlice.reducer;

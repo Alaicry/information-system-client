@@ -38,11 +38,8 @@ export const guideLinks = [
 		name: "Список сотрудников",
 	},
 	{
-		path: "/guide/sensors",
+		path: "/guide/devices",
 		name: "Справочник датчиков уровня топлива",
 	},
-	{
-		path: "/guide/terminals",
-		name: "Справочник навигационных терминалов",
-	},
+
 ];
