@@ -19,12 +19,8 @@ export const homeLinks = [
 		name: "Журнал проверки контрагентов по НИС ГЛОНАСС",
 	},
 	{
-		path: "/terminals-journal",
-		name: "Журнал навигационных терминалов",
-	},
-	{
-		path: "/device-journal",
-		name: "Журнал датчиков уровня топлива",
+		path: "/devices",
+		name: "Журнал учета устройств",
 	},
 ];
 
@@ -41,5 +37,4 @@ export const guideLinks = [
 		path: "/guide/devices",
 		name: "Справочник датчиков уровня топлива",
 	},
-
 ];

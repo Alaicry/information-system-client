@@ -1,9 +1,9 @@
 import React from "react";
 import Main from "./components/Main";
 import Header from "./components/Header";
-import Container from "./components/Container";
 import { useDispatch } from "react-redux";
 import { fetchAuthMe } from "./redux/slices/userSlice";
+import { Container } from "@chakra-ui/react";
 
 const App = () => {
 	const dispatch = useDispatch();
@@ -12,7 +12,12 @@ const App = () => {
 	}, []);
 
 	return (
-		<Container>
+		<Container
+			maxW="1054px"
+			padding="0 15px"
+			margin="0 auto"
+
+		>
 			<Header />
 			<Main />
 		</Container>
