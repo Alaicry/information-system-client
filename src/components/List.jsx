@@ -17,7 +17,7 @@ const List = ({ list }) => {
 			{list.map((item) => (
 				<ListItem
 					key={item.name}
-					padding="10px"
+					padding="10px 15px"
 					borderRadius="10px"
 					backgroundColor="rgba(229, 229, 229, 1)"
 					transition="all ease 0.3s"

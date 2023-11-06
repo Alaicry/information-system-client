@@ -8,8 +8,8 @@ export const navLinkRoutes = [
 		name: "Справочник",
 	},
 	{
-		path: "/auth",
-		name: "Авторизация",
+		path: "/account",
+		name: "Личный кабинет",
 	},
 ];
 
@@ -35,6 +35,6 @@ export const guideLinks = [
 	},
 	{
 		path: "/guide/devices",
-		name: "Справочник датчиков уровня топлива",
+		name: "Справочник устройств",
 	},
 ];

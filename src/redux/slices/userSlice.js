@@ -4,6 +4,7 @@ import axios from "axios";
 export const fetchAuth = createAsyncThunk(
 	"@@auth/fetchAuth",
 	async (params) => {
+	
 		const { data } = await axios.post(
 			"http://localhost:7000/user/sign-in",
 			params

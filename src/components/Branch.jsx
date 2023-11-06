@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getBranches } from "../redux/slices/branchSlice";
+import { ListItem, OrderedList } from "@chakra-ui/react";
 
 const Branch = () => {
 	const dispatch = useDispatch();
@@ -11,14 +12,14 @@ const Branch = () => {
 	}, [dispatch]);
 
 	return (
-		<ol className="list list-reset">
+		<OrderedList>
 			{branchList &&
 				branchList?.map((branch) => (
-					<li key={branch.id} className="">
+					<ListItem key={branch.id} listStyleType="number">
 						{branch.name}
-					</li>
+					</ListItem>
 				))}
-		</ol>
+		</OrderedList>
 	);
 };
 
